@@ -5,17 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Attach to Chrome",
-            "port": 9222,
-            "request": "attach",
-            "type": "chrome",
-            "webRoot": "${workspaceFolder}"
-        },
-        {
-            "type": "chrome",
+            "type": "msedge",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "c:\\Users\\allan\\OneDrive\\Documents\\02 AREAS\\PrWEB\\lab02\\index.html"
+            "name": "Launch Edge against localhost",
+            //"file": "${workspaceFolder}\\TPC_02-Allanah Malate\\primeira pagina.html",
+            //"file": "${workspaceFolder}\\lab01\\ficheiro index.html",
+            //"file": "${workspaceFolder}\\lab02\\index.html",
+            //"file": "${workspaceFolder}\\lab03\\index.html",
+            //"file": "${workspaceFolder}\\lab04\\index.html",
+            "file": "${workspaceFolder}\\TPC_03-Allanah Malate\\Exemplo_Background.html",
+            "webRoot": "${workspaceFolder}",
         }
     ]
 }
+

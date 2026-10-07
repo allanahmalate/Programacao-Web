@@ -1,0 +1,62 @@
+<html>
+<body>
+    <form name="input" action="form_action.php" method="post">
+        Student Name (Full Name):
+        <input type="text" name="nome" size="20" />
+        <br />
+        Enrollment Number:
+        <input type="text" name="enrollment" size="20" />
+        <br />
+        Email:
+        <input type="text" name="email" size="20" />
+        <br />
+        Password:
+        <input type="password" name="pass" size="20" />
+        <br />
+        Gender:
+        <br/>
+        <input type="radio" name="sexo" value="M">Male
+        <br/>
+        <input type="radio" name="sexo" value="F">Female
+        <br/>
+        <input type="radio" name="sexo" value="O">Other
+        <br />
+        Student date of birth:
+        <input type="text" name="date" value="dd-mm-yyyy" size="20" />
+        <br />
+        Enter Educational Stage:
+        <select name ="stage" value="Elementary" size ="2">
+            <option value ="Elementary">Elementary</option>
+            <option value="Middle">Middle</option>
+            <option value="Junior High">Junior High</option>
+            <option value="High">High</option>
+        </select>
+        <br />
+        <h3>Consent and Agreement</h3>
+        <br>
+        I certify that the above information is true and correct to the best of my knowledge. 
+        <input type="checkbox" name="agree" value=“carro" />
+        <br/>
+        <h4>Documents Submitted: </h4>
+        <br>
+        Birth Certificate
+        <input type="checkbox" name="bc" value=“carro" />
+        <br/>
+        Proof of Residence
+        <input type="checkbox" name="pr" value=“carro" />
+        <br/>
+        Immunization Records
+        <input type="checkbox" name="ir" value=“carro" />
+        <br/>
+        Other:
+        <textarea name="comentarios" rows="6" cols="60">Enter your comments</textarea>
+        <br/>
+        <input type="button" value="Previous"/>
+        <input type="button" value="Next"/>
+        <br />
+        <br>
+        <input type="submit" value="Enviar" />
+        <br/>
+    </form>
+</body>
+</html>

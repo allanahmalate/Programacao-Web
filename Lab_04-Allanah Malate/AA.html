@@ -1,0 +1,205 @@
+<html>
+<body>
+    <table>
+        <tr>
+            <td> linha 1, coluna 1 </td>
+            <td> linha 1, coluna 2 </td>
+        </tr>
+        <tr>
+            <td> linha 2, coluna 1 </td>
+            <td> linha 2, coluna 2 </td>
+        </tr>
+    </table>
+    <hr>
+    <p> Cada tabela começa com a tag table.
+    Cada linha da tabela começa com a tag tr (tr = table row).
+    Cada dado da tabela começa com a tag td (td = table data).
+    </p>
+    <h4>Uma coluna:</h4>
+    <table border="1">
+        <tr>
+            <td>100</td>
+        </tr>
+    </table>
+    <h4>Uma linha e três colunas:</h4>
+    <table border="1">
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+    </table>
+    <h4>Duas linhas e três colunas:</h4>
+    <table border="1">
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>500</td>
+            <td>600</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Células que abrangem duas colunas:</h4>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th colspan="2">Telefone</th>
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>555 77 854</td>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+    <h4>Células que abrangem duas linhas:</h4>
+    <table border="1">
+        <tr>
+            <th>Primeiro Nome:</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefone:</th>
+            <td>555 77 854</td>
+        </tr>
+        <tr>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Com uma borda normal:</h4> 
+    <table border="1">
+        <tr>
+            <td>Primeira</td>
+            <td>Linha</td>
+        </tr> 
+        <tr>
+            <td>Segunda</td>
+            <td>Linha</td>
+        </tr>
+    </table>
+    <h4>Com uma borda grossa:</h4> 
+    <table border="8">
+        <tr>
+            <td>Primeira</td>
+            <td>Linha</td>
+        </tr>
+        <tr>
+            <td>Segunda</td>
+            <td>Linha</td>
+        </tr>
+    </table>
+    <h4>Com uma borda muito grossa:</h4> 
+    <table border="15">
+        <tr>
+            <td>Primeira</td>
+            <td>Linha</td>
+        </tr> 
+        <tr>
+            <td>Segunda</td>
+            <td>Linha</td>
+        </tr>
+    </table>
+    <hr>
+    <h4>Uma cor de fundo:</h4>
+    <table border="1" bgcolor="red">
+        <tr>
+            <td>Primeira</td>
+            <td>Linha</td>
+        </tr> 
+        <tr>
+            <td>Segunda</td>
+            <td>Linha</td>
+        </tr>
+    </table>
+    <h4>Uma imagem de fundo:</h4>
+    <table border="1" background="bgdesert.jpg">
+        <tr>
+            <td>Primeira</td>
+            <td>Linha</td>
+        </tr> 
+        <tr>
+            <td>Segunda</td>
+            <td>Linha</td>
+        </tr>
+    </table>
+    <hr>
+    <form action="" name="Form1" method="get">
+        <p>Nome: 
+        <input type="text" name="nome" size="20" />
+        <br>
+        <p>Apelido: 
+        <input type="text" name=”apelido" size="20" />
+    </form>
+    <hr>
+    <form action="">
+        Utilizador: 
+        <input type="text" name="user" size="20" />
+        <br />
+        Senha: 
+        <input type="password" name="password" size="20" />
+    </form>
+    <p>
+        <b>Nota:</b>O navegador exibe asteriscos ou bullets ao invés dos caracteres digitados com campo password.
+    </p>
+    <hr>
+        <form action="" name="Form" method="POST">
+        Eu tenho uma bicicleta:
+        <input type="checkbox" name=“tem_bicicleta" value=“bicicleta" />
+        <br/>
+        Eu tenho um carro: 
+        <input type="checkbox" name=“tem_carro" value=“carro" />
+        <br/>
+        Eu tenho um avião: 
+        <input type="checkbox" name=“tem_aviao" value=“avião" />
+    </form>
+    <hr>
+        <form action="" name="Form" method="POST">
+        Qual é seu sexo ?
+        <br/>
+        <input type="radio" name="sexo" value="M">Masculino
+        <br/>
+        <input type="radio" name="sexo" value="F">Feminino
+    </form>
+    <hr>
+        <form action="">
+    <input type="button" value="Hello world!"/>
+    </form>
+    <hr>
+        <form name="input" action="form_action.php" method="get">
+        Digite seu Nome:
+        <input type="text" name="nome" value="Mickey" size="20" />
+        <br />
+        Digite seu Apelido:
+        <input type="text" name=”apelido" value="Mouse" size="20" />
+        <br />
+        <input type="submit" value="Enviar" />
+    </form>
+    <p>Utilize a tecla <CTRL> para seleção de mais de um item</p>
+    <p>
+Se você clicar no botão "Enviar" você vai enviar sua entrada a uma nova página chamada "form_action.php".
+    </p>
+    <hr>
+        <form action="">
+        <p>Indroduza seus comentários:
+            <textarea name="comentarios" rows="6" cols="60">Entre com seus comentários</textarea>
+        </p>
+    </form>
+    <hr>
+        <select name ="browser" value="Firefox" size ="2">
+        <option value ="IE">Internet Explorer</option>
+        <option value="firefox">Firefox</option>
+        <option value="opera">Opera</option>
+        <option value="safari">Safari</option>
+    </select>
+    <br  />
+    <br  />
+    <br  />
+    <br  />
+    <br  />
+    <br  />
+</body>
+</html>
