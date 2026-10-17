@@ -1,0 +1,44 @@
+<html>
+    <head>
+    <title> Exercicio 12: cria 2 funcoes em JS que permitem somar ou multiplicar
+    valores informados em 3 caixas de texto .</title>
+
+    <script>
+    function soma ()
+    {
+        x=eval (document. prova. cl.value) +eval (document.prova. c2. value) +eval (document.
+        prova.c3.value) ;
+        document.prova. c4.value=x;
+    }
+
+    function multiplica ()
+    {
+        y=eval (document. prova. cl.value) *eval (document.prova. c2.value) *eval (document.
+        prova.c3.value) ;
+        document.prova. c4.value=y;
+    }
+    </script>
+
+    </head>
+
+    <body>
+    <form name="prova">
+    Entre com os valores nos campos e de um clique nos botoes. <br><br>
+    Valorl: <input type="text" name="cl" value="" size=5 maxlength=5><br>
+    Valor2: <input type="text" name="c2" value="" size=5 maxlength=5><br>
+    Valor3: <input type="text" name="c3" value="" size=5 maxlength=5><br>
+    <br>
+    <input type="button" value="Somar" onclick="soma () ">
+    <input type="button" value="Multiplicar" onclick="multiplica () ">
+    <br><br>
+    Resposta: <input type="text" name="c4" value="" size=10 maxlength=0>
+    </form>
+
+    <!--
+    O eval () e uma funcao que avalia ou executa um argumento. Se o argumento for uma
+    expressao, eval () avalia a expressao. Se o argumento for uma ou mais declarações
+    JavaScript, eval () executa as instrucões.
+    -->
+
+    </body>
+</html>

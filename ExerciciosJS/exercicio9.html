@@ -1,0 +1,31 @@
+<htm1>
+<head><title> Exercicio 9: apresenta o quadrado de um numero ja informado
+internamente e, em seguida, em uma caixa de texto, permite que voce informe um
+numero para saber seu valor ao cubo .</title>
+
+<script>
+    function quadrado (x)
+    {
+        document.write (x*x) ;
+    }
+
+    function cubo (x)
+    {
+        return x*x*x
+    }
+
+    y=5;
+    document.write ("0 quadrado de "+ y +" e igual a ");
+    quadrado (y);
+</script>
+
+<body>
+    <form>
+        <br>Informe um numero para saber seu valor ao cubo e, em seguida,
+        pressione a tecla TAB ou de um clique fora da caixa de texto .<br>
+        <input type ="text" name="aocubo" value="" onBlur ="alert ('0 cubo de '+this.valuet+' e '+cubo(this. value) )">
+    </form>
+
+<!-- O evento onblur ocorre quando um objeto perde o foco .-- >
+</body>
+</html>
