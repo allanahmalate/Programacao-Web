@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> TPC 6 - SWITCH</title>
+
+        <script>
+            
+            let valor1=window.prompt("Introduza um valor: ");
+            let valor2=window.prompt("Introduza OUTRO valor: ");
+            let operador=window.prompt("Introduza o operador (+, -, * ou /): ");
+
+            switch(operador)
+            {
+                case "+":
+                    x=eval (valor1) +eval (valor2);
+                    break;
+                case "-":
+                    x=eval (valor1) -eval (valor2);
+                    break;
+                case "*":
+                    x=eval (valor1) *eval (valor2);
+                    break;
+                case "/":
+                    x=eval (valor1) /eval (valor2);
+                    break;
+                default:
+                    alert("Operador inválido!");
+            }
+            document.write("O resultado de " + valor1 + " " + operador + " " + valor2 + " é igual a " + x);
+        </script>
+    </head>
+</html>
