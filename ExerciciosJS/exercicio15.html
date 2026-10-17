@@ -26,11 +26,32 @@
         }
         if ( (hora == 18) || (hora == 19) ) 
         {
-            document.write( "Bom final de tarde!");
+            if ( (hora == 19) || (minuto == 30) ) 
+            {
+                document.write("Vamos para aula!");
+            }
+            else
+            {
+                document.write( "Bom final de tarde!");
+            }
         }
         if ((hora == 20) || (hora == 21) || (hora == 22) ) 
         {
-            document.write( "Boa noite!");
+            if ( (hora == 20) || (minuto == 50) ) 
+            {
+                document.write("Hora do RECREIO!");
+            }
+            else
+            {
+                if ( (hora == 22) || (minuto == 30) ) 
+                {
+                    document.write("Vamos embora, a aula terminou!");
+                }
+                else
+                {
+                    document.write( "Boa noite!");
+                }
+            }
         }
         if (hora == 23) 
         {
